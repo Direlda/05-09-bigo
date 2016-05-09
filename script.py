@@ -6,7 +6,24 @@ def search(list, target):
         target - a target to search for
     """
 
-    # Your code goes here!!
+    # My code
+    #if target in list:
+    #    index_num = list.index(target)
+    #    return index_num
+    #else:
+    #    return "-1"
+
+    # Joel's code
+    for index in range(len(list)):
+        if list[index] == target:
+            return index
+    return -1
+
+    # Joel's alt code
+    for i, item in enumerate(list):
+        if item == target:
+            return index
+    return -1
 
 
 print(search(['John','Paul','George','Ringo'], 'George'))
